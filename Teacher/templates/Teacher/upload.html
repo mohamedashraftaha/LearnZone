@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload | LearnZone</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="{% static 'css/upload.css' %}">
+</head>
+<body>
+
+    <header>
+     
+
+        <div class="container"></div>
+        <nav>
+            <
+            <div class="nav-brand">
+                <a href="/">
+                    <img src ="/static/Images/logo.png" alt="logo">
+                </a>
+            </div>
+
+           
+              </div>
+        </nav>
+    </header>
+
+    <section class="back">
+        <div class="container">
+            <div class="main-message">
+                
+                <p><img src="/static/Images/upload.png" alt="teacher/student" class="pic">
+                </p>
+                <div class="cta">
+                </div>
+            </div>
+        </div>
+        <div class="slogan">
+                <p style="font-size:20px">Upload New Assignment for your students:</p> 
+                
+            <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">
+                <input type="submit">
+              </form>
+        </div>
+       
+    </section>
+
+    <script type="text/javascript" src="/static/js/hp.js"></script>
+</body>
+</html>

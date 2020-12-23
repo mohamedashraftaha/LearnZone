@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parent | LearnZone</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="{% static 'css/student.css' %}">
+</head>
+<body>
+
+    <header>
+
+
+
+        <div class="container"></div>
+        <nav>
+            <
+            <div class="nav-brand">
+                <a href="/">
+                    <img src ="/static/Images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="topnav">
+                    <a class="active" href="/UserAccount/logout/student">Logout</a>
+                    <a href='submit'>Submit Assignment</a>
+                    <a href='viewassignment'>View Assignment</a>
+                    <a href='chat'>Chat</a>
+                    <a href="https://www.youtube.com/channel/UCaBbuY2RRlKmL8k0xOLqJ3g">Watch Tutorial</a>
+                    <a href="https://www.youtube.com/channel/UCaBbuY2RRlKmL8k0xOLqJ3g">Watch Live Sessions</a>
+                    <a href='gradebook'>Gradebook</a>
+                    <a href='calendar'>Calendar</a>
+                    <a href="https://www.ekb.eg/resources?sourcesLang=en">Online Library</a>
+                                        {% if user.is_authenticated %}
+                    <h1> Welcome {{ user.username }} !</h1>
+                    {% endif %}
+              </div>
+        </nav>
+    </header>
+
+    <section class="back">
+        <div class="container">
+            <div class="main-message">
+
+                <p><img src="/static/Images/student.png" alt="teacher/student" class="pic">
+                </p>
+                <div class="cta">
+                </div>
+            </div>
+        </div>
+        <div class="slogan">
+                <p style="font-size:35px">Announcements:</p>
+                <br />
+
+                <p style="font-size:20px">- School is closed due to the rise of COVID-19 cases, Stay Safe !</p>
+                <br />
+
+            <p style="font-size:20px"> - Assignment 4 deadline has been postponed to next Saturday, please submit on time.</p>
+            <br />
+
+            <p style="font-size:20px">- Exam 2 grades are now available.</p>        </div>
+    </section>
+
+    <script type="text/javascript" src="/static/js/hp.js"></script>
+</body>
+</html>

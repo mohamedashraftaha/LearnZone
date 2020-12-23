@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        {% load static %}
+    <title>LearnZone</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="{% static 'css/hp.css' %}"type = "text/css"/>
+</head>
+<body>
+
+    <header>
+            <button onclick="location.href='/UserAccount/register/student'" class="btn btn1" id="btn1">Sign Up / Login Student</button>
+            <button onclick="location.href='/UserAccount/register/teacher'" class="btn btn2" id="btn2">Sign Up / Login  Teacher</button>
+            <button onclick="location.href='/UserAccount/register/parent'" class="btn btn3" id="btn3">Sign Up / Login  Parent</button>
+
+
+
+
+
+        <div class="container"></div>
+        <nav>
+            <
+            <div class="nav-brand">
+                <a href="/">
+                    <img src ="/static/Images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="topnav">
+                <a class="active" href="/">Home</a>
+                <a href='FAQs'>FAQs</a>
+                <a href='AboutUs'>About Us</a>
+                <a href='Support'>Support</a>
+              </div>
+        </nav>
+    </header>
+
+    <section class="back">
+        <div class="container">
+            <div class="main-message">
+                
+                <p><img src="/static/Images/pic.png" alt="teacher/student" class="pic">
+                </p>
+                <div class="cta">
+                </div>
+            </div>
+        </div>
+        <div class="slogan">
+            <p style="font-size:35px">The Only Educational Platform You Will Ever Need !</p>
+        </div>
+     
+    </section>
+    <script type="text/javascript" src="/static/js/hp.js"></script>
+</body>
+</html>

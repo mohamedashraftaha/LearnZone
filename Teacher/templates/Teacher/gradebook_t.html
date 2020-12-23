@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Teacher Gradebook | LearnZone</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="{% static 'css/gradebook_t.css' %}">
+</head>
+<body>
+
+    <header>
+     
+
+        <div class="container"></div>
+        <nav>
+            <
+            <div class="nav-brand">
+                <a href="/">
+                    <img src ="/static/Images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="topnav">
+            
+              </div>
+        </nav>
+    </header>
+
+
+
+    
+    <section class="back">
+        <div class="container">
+            <div class="main-message">
+                    <h1>Student Gradebook</h1>
+                    <br/>
+                    <p style="color:red">- Enter the student email, then add the grades - </p>
+                    <form action="#" id="grading">
+                        <table>
+                            <tr>
+                                <td style="color:white"><label for="email">Email:</label></td>
+                                <td colspan="2"><input id="email" type="email" placeholder="student@example.com" required></td>
+                            </tr>
+                            <tr>
+                                <td style="color:white"><label for="quiz1">Quiz 1:</label></td>
+                                <td><input type="number" id="quiz1" min="0" max="100" step="10" value="0" required></td>
+                            </tr>
+                            <tr>
+                                <td style="color:white"><label for="quiz2">Quiz 2:</label></td>
+                                <td><input type="number" id="quiz2" min="0" max="100" step="10" value="0" required></td>
+                            </tr>
+                            <tr>
+                                <td style="color:white"><label for="quiz3">Quiz 3:</label></td>
+                                <td><input type="number" id="quiz3" min="0" max="100" step="10" value="0" required></td>
+                            </tr>
+                            <tr>
+                                <td style="color:white"><label for="quiz4">Quiz 4:</label></td>
+                                <td><input type="number" id="quiz4" min="0" max="100" step="10" value="0" required></td>
+                            </tr>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+
+                            <tr>
+                                <td></td>
+                                <td style="color:white">Class Average: <output id="average">__</output></td>
+                                <br/>
+
+                                <td><button id="calculate" type="button">Calculate</button></td>
+                            </tr>
+                            <tr>
+                                <td style="color:white"><label for="grade">Grade:</label></td>
+                                <td><input type="text" id="grade" size="5" minlength="1" maxlength="2" pattern="[A-F]" required></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan=4><input type="submit"></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <script src="app.js"></script>
+                <p><img src="/static/Images/grade.png" alt="grade" class="pic">
+                </p>
+                <div class="cta">
+                </div>
+            </div>
+        </div>
+        <div class="slogan">
+        </div>
+    </section>
+
+    
+
+    <script type="text/javascript" src="/static/js/hp.js"></script>
+</body>
+</html>

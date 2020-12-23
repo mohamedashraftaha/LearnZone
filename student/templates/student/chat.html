@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        {% load static %}
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat | LearnZone</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="{% static 'css/chat.css' %}">
+</head>
+<body>
+
+    <header>
+         
+
+
+        <div class="container"></div>
+        <nav>
+            <
+            <div class="nav-brand">
+                <a href="/">
+                    <img src ="/static/Images/logo.png" alt="logo">
+                </a>
+            </div>
+
+          
+        </nav>
+    </header>
+
+    <section class="back">
+            
+            <div class="main-message">
+                
+                    <p><img src="/static/Images/chat.png" alt="chat" class="pic">
+                    </p>
+                <div class="cta">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="slogan">
+                <div class="containertext">
+                        <p style="color:black">Type Here:</p>
+                          <input type="text" id="fname" name="fname" style="width: 470px"><br>
+                        <span class="time-right"></span>
+                      </div>
+                <div class="container1">
+                        <p style="color:red">Sam:</p>
+                        <p>Hello. How are you today?</p>
+                        <span class="time-right">8.27AM</span>
+                      </div>
+                      
+                      <div class="container1 darker">
+                            <p style="color:red">Emma:</p>
+
+                        <p>Hey! I'm fine. Thanks for asking!</p>
+                        <span class="time-left">8.30AM</span>
+                      </div>
+                      
+                      <div class="container1">
+                            <p style="color:red"> Emma :</p>
+                        <p>Sweet! So, what did you do in the group project?</p>
+                        <span class="time-right">8.32AM</span>
+                      </div>
+                      
+                      <div class="container1 darker">
+                        <p style="color:red">Sam:</p>
+                        <p >I am currently working on the final report !</p>
+                        <span class="time-left">8.33AM</span>
+                      </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="/static/js/hp.js"></script>
+</body>
+</html>
+
+<!--I used this online tutorial to create this feature: https://www.w3schools.com/howto/howto_css_chat.asp-->

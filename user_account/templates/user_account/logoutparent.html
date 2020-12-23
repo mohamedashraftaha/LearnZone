@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load widget_tweaks %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+    <script >
+        src="https://kit.fontawesome.com/64d58efce2.js"
+        crossorigin="anonymous"
+    </script>
+ <link rel="stylesheet" href="{% static 'css/logout.css' %} " type = "text/css"/>
+    <title>logout Parent</title>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="forms-container">
+        <div class="login">
+            <form method="POST" class="form-group">{% csrf_token %}
+            <form action="" class="login-form">
+         <div class="login-btn">
+                                <button onclick="location.href='/UserAccount/login/parent'" class="btn solid btn-solid" type="reset" id="login-btn">Login Again</button>
+
+                            </div>
+            </form>
+            </form>
+
+
+
+        </div>
+    </div>
+
+                                    <div class ="register-banner">
+                                <h3> You Are Logged out </h3>
+                                <p> It was great having you!</p>
+
+                                    </div>
+
+                               <img class="pic" src="/static/Images/parent2.svg" >
+
+
+                         <div class="home-btn">
+                                <button onclick="location.href='/'" class="btn solid btn-solid-1" type="reset" id="home-btn">Home</button>
+
+                            </div>
+
+
+
+
+
+
+         <div class="error-handling" >
+{% if form.non_field_errors %}
+    <ul class='form-errors'>
+        {% for error in form.non_field_errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+      </div>
+
+
+
+</div>
+
+
+</body>
+</html>

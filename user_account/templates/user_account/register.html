@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load widget_tweaks %}
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+    <script >
+        src="https://kit.fontawesome.com/64d58efce2.js"
+        crossorigin="anonymous"
+    </script>
+  <link rel="stylesheet" href="{% static 'css/register.css' %} " type = "text/css"/>
+    <title>Register Student</title>
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <div class="forms-container">
+        <div class="register">
+            <form method="POST" class="form-group">
+            <form action="register" method="POST">
+                <h2 class="tittle">Register</h2>
+                {% csrf_token %}
+                <div class="input-field">
+
+                    <i class="fa fa-user icon"></i>
+                    {%render_field form.first_name class="input" placeholder="First Name*" %}
+                    <span></span>
+                </div>
+                  <div class="input-field">
+                    <i class="fa fa-user icon"></i>
+                    {%render_field form.last_name class="input" placeholder="Last Name*" %}
+                      <span></span>
+                </div>
+                <div class="input-field">
+                    <i class="fa fa-user icon"></i>
+                    {%render_field form.username class="input" placeholder="Username*" %}
+                    <span></span>
+                </div>
+                <div class="input-field">
+                    <i class="fa fa-lock"></i>
+                    {%render_field form.password1 class="input" placeholder="Password*" %}
+                    <span></span>
+                </div>
+                <div class="input-field">
+                    <i class="fa fa-lock"></i>
+                    {%render_field form.password2 class="input" placeholder="Re-enter Password*" %}
+                    <span></span>
+                </div>
+<input type="submit" value="Register" class="btn solid btn-solid" id="reg-button">
+
+
+
+                <p class="social-text">Or Register with Social media</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" class="social-icon">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/login?lang=en" class="social-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="social-icon">
+                        <i class="fa fa-google"></i>
+                    </a>
+
+                </div>
+            </form>
+            </form>
+
+
+
+        </div>
+    </div>
+
+
+                                    <div class ="login-banner">
+                             <h3> One of Us? </h3>
+                                                <p> Login Now to continue your journey!</p>
+
+
+                                    </div>
+                            <div class="login-btn">
+                                <button onclick="location.href='/UserAccount/login/student'" class="btn transparent" id="login-btn">Login</button>
+
+                            </div>
+
+                             <img class="pic pic1" src="/static/Images/2.svg"  id="pic11">
+
+
+                         <div class="home-btn">
+                                <button onclick="location.href='/'" class="btn solid btn-solid-1" type="reset" id="home-btn">Home</button>
+
+                            </div>
+
+
+         <div class="error-handling" >
+
+             <p>
+                 {% if form.errors %}
+   {% for field in form %}
+      {% for error in field.errors %}
+         <li> {{ error|escape }} </li>
+      {% endfor %}
+   {% endfor %}
+{% endif %}
+             </p>
+
+      </div>
+
+
+</div>
+
+</body>
+</html>

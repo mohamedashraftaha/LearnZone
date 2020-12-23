@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title> Teacher </title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %} " type = "text/css"/>
+        <style>
+                body {
+                  background-image: url("static/Images/back.jpg");
+                  background-position: 25% 75%;
+                  background-repeat:repeat ;
+                }
+        </style>
+
+
+
+        </head>
+    <body>
+    <h1> Welcome {{user.username}} </h1>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                <img src="{% static 'Images/logo.png' %}">
+
+            </div>
+            <div class="navig">
+                <ul>
+                    <li><a href ="/">Home</a></li>
+                    <li><a href="https://www.google.com/calendar">Check Calendar</a></li>
+                    <li><a href="/UploadAssignment">Upload an Assignment</a></li>
+                    <li><a href="Edit Grades">Edit Grades</a></li>
+                     <li><a href="#"> Chat </a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#"> Support</a></li>
+                </ul>
+            </div>
+            </nav>
+
+            <div class="info">
+                <img src="{% static 'Images/school.png' %}" class ="school">
+                <div id="circ">
+                    <div class="feature one">
+                        <img src="{% static 'Images/book.png' %}">
+                        <div>
+                            <h1 style= "color:rgb(0, 0, 218)">Online Library</h1>
+                            <p style= "color:rgb(0, 0, 0)"><b><i>Get online access to your school library </i></b></p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="{% static 'Images/cal.png' %}">
+                        <div>
+                                <h1 style= "color:rgb(0, 0, 218)">Reminders</h1>
+                                <p style= "color:rgb(0, 0, 0)"><b><i>Receive daily class reminders and book office hours</i></b></p>
+                            </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="{% static 'Images/chat.png' %}">
+                         <div>
+                                <h1 style= "color:rgb(0, 0, 218)"> Tutorials</h1>
+                                <p  style= "color:rgb(0, 0, 0)"><b><i>Ohh Stuck ? Watch a video or live tutorial </i></b></p>
+                            </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="{% static 'Images/grade.png' %}">
+                        <div>
+                                <h1 style= "color:rgb(0, 0, 218)"> Updated Grade book </h1>
+                                <p style= "color:rgb(0, 0, 0)"><b><i>Track your weekly class progress </i></b></p>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+
+        </body>
+</html>
